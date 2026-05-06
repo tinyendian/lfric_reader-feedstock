@@ -20,11 +20,14 @@ requirements:
     - cmake
   host:
     - paraview
+    - qt6-main
     - vtk
     - python
     - pip
     - setuptools_scm
     - libxml2-devel
+    - zlib
+    - libpng
   run:
     - paraview
     - python
