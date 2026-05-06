@@ -11,7 +11,7 @@ cxx_compiler:
 cxx_compiler_version:
 - '14'
 docker_image:
-- quay.io/condaforge/linux-anvil-x86_64:alma9
+- quay.io/condaforge/linux-anvil-aarch64:alma9
 libpng:
 - '1.6'
 libxml2_devel:
@@ -21,11 +21,11 @@ pin_run_as_build:
     min_pin: x.x
     max_pin: x.x
 python:
-- 3.13.* *_cp313
+- 3.10.* *_cpython
 qt_main:
 - '5.15'
 target_platform:
-- linux-64
+- linux-aarch64
 vtk:
 - 9.6.1
 zlib:
