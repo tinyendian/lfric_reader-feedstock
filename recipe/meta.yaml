@@ -20,14 +20,16 @@ requirements:
     - cmake
   host:
     - paraview
-    - qt6-main
     - vtk
     - python
     - pip
     - setuptools_scm
+    - qt-main
+    - libxslt
     - libxml2-devel
     - zlib
     - libpng
+    - vulkan-headers
   run:
     - paraview
     - python
