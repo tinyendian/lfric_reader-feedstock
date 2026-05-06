@@ -23,6 +23,8 @@ requirements:
     - vtk
     - python
     - pip
+    - setuptools_scm
+    - libxml2-devel
   run:
     - paraview
     - python
