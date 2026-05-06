@@ -3,8 +3,8 @@ cmake ${CMAKE_ARGS} CMakeLists.txt \
       -DCMAKE_BUILD_TYPE=Release \
       -DBUILD_SHARED_LIBS=ON \
       -DBUILD_TESTING=OFF \
-      -DPython3_EXECUTABLE="$PYTHON" \
-      -DOPENGL_opengl_LIBRARY=${BUILD_PREFIX}/${HOST}/sysroot/usr/lib64/libGL.so
+      -DPython3_FIND_STRATEGY=LOCATION \
+      -DPython3_ROOT_DIR=${PREFIX}
 cmake --build . --target install --config Release
 
 cd ../..
